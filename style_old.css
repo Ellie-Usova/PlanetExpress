@@ -1,0 +1,436 @@
+/*===================================================
+Общие свойства документа
+===================================================*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 1300px;
+	margin: 0 auto;
+	font-family: 'Open Sans', 'Arial', sans;
+	font-size: 17px;
+}
+
+header {
+	background: url("img/bg_image-slider.jpg") no-repeat;
+}
+
+h2 {
+	font-size: 42px;
+	line-height: 42px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-left: 333px;
+	margin-top: 200px;
+}
+
+h3 {
+		font-size: 19px;
+		line-height: 20px;
+		font-weight: 900;
+		text-transform: uppercase;
+		margin-bottom: 22px;
+}
+
+p {
+	/*width: 750px;
+	margin: 40px 250px 170px 250px;
+	margin-bottom: 22px;
+	width: 310px;*/
+}
+
+.column-center {
+		display: inline-block;
+		width: 700px;
+		width: 750px;
+	margin: 40px 250px 170px 250px;
+}
+
+.column-right {
+		display: inline-block;
+		width: 350px;
+		padding-top: 78px;
+}
+
+.separator {
+	width: 60px;
+	height: 10px;
+	background-color: #1e2123;
+	margin-left: 330px;
+	margin-top: 40px;
+}
+
+
+
+/* ОФОРМЛЕНИЕ КНОПОК
+===================================================*/
+.button {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.button a{
+	font-size: 16px;
+	font-weight: 900;
+	color: #ffffff;
+	border: 3px solid #ffffff;
+	text-align: center;
+	text-decoration: none;
+	padding: 1px 7px 1px 7px;
+	
+}
+
+.button a:hover {
+	color: #0c9aec;
+	background-color: #ffffff;
+	border-color: #ffffff;
+	transition-duration: 0.5s;
+}
+
+.button__active a{
+	color: #1e2123;
+	border-color: #1e2123;
+}
+
+
+
+
+/*===================================================
+Сетка
+===================================================*/
+body,
+header,
+main,
+footer {
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*Вспомогательные свойства (УДАЛИТЬ ПОСЛЕ НАСТРОЙКИ СЕТКИ)
+=====================================================
+header {
+	background-color: aqua;
+	height: 750px;
+}
+
+main {
+	background-color: azure;
+	height: 7962px;
+} 
+
+footer {
+	background-color: burlywood;
+	height: 231px;
+}
+
+.welcome {
+	background-color: palegoldenrod;
+	height: 1592px;
+}
+
+.galery {
+	background-color: papayawhip;
+	height: 1592px;
+}
+
+.about_me {
+	background-color: peachpuff;
+	height: 1592px;
+}
+
+.blog {
+	background-color: pink;
+	height: 1592px;
+}
+
+.contact {
+	background-color: lightpink;
+	height: 1592px;
+}
+
+*/
+
+
+
+
+/*===================================================
+СЕКЦИЯ HEADER
+===================================================*/
+
+.top{
+	display: flex;
+}
+
+.logotype {
+	/*display: inline-block;*/
+	width: 296px;
+	margin: 40px 40px 20px 40px;
+}
+
+/* MENU
+===================================================*/
+
+
+
+.header-menu {
+	display: inline-block;
+	width: 520px;
+	margin-top: 50px;
+	margin-left: 360px;
+	text-align: right;
+	position: relative;
+}
+
+
+
+.header-menu li {
+    display: inline;
+	margin-right: 31px;
+}
+
+.header-menu li:last-child {
+	margin: 0;
+}
+
+
+
+
+
+/* Оформление ссылок меню*/
+.header-menu li a {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-menu a:hover {
+	color: 	#1e2123;
+	transition-duration: 0.5s;
+}
+	
+/* Всплывающее меню
+===================================================*/
+.header-menu-popup {
+		position: absolute;
+		width: 60px;
+		height: 210px;
+		padding-top: 20px;
+		top: 10px;
+		left: 240px;
+		display: none;
+}
+
+.header-menu-popup--list {
+		position: absolute;
+		top: 25px;
+		left: -45px;
+		background-color: #1e2123;
+		width: 160px;
+		height: 183px;
+		z-index: 20;
+	/*display: none;*/
+}
+
+.header-menu-popup--list li,
+.header-menu-popup--list ul li:last-child{
+	display: block;
+	margin: 3px 3px;
+	text-align: left;
+}
+
+.header-menu-popup--list li a {
+	display: block;
+	font-size: 11px;
+	line-height: 22px;
+		padding: 5px 20px 5px 20px;
+}
+
+.header-menu-popup--list a:hover {
+		color: #1e2123;
+		background-color: #ffffff;
+		transition-duration: 0.5s;
+}
+
+.header-menu-popup--arrow {
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		background-color: #1e2123;
+		transform: rotate(45deg);
+		z-index: 10;
+		top: 20px;
+		left: 30px;
+}
+
+.header-menu li:nth-child(3):hover .header-menu-popup {
+		display: block;
+		transition-duration: 0.5s;
+		transition-property: display;
+}
+
+/* SLIDER
+===================================================*/
+
+.slider {
+	margin-top: 0px;
+}
+
+.slide h2 {
+	color: #ffffff;
+}
+
+.slide .separator {
+	background-color: #ffffff;
+}
+
+.slide p {
+	color: #ffffff;
+	width: 750px;
+	margin: 40px 250px 170px 250px;
+}
+
+.slider-buttons {
+	margin: 0 330px 50px;
+}
+
+.slider-buttons .button:first-child,
+.slider-buttons .button:last-child {
+	text-transform: uppercase;
+}
+
+
+
+
+/*===================================================
+Секция Welcome
+===================================================*/
+/*.welcome div:first-child {
+		margin-bottom: 125px;
+}*/
+
+.welcome img {
+		float: left;
+		margin-right: 50px;
+}
+
+.welcome h3 {
+		
+}
+
+
+
+/* Web development
+===================================================*/
+.web-development{
+		margin-top: 96px;
+		color: #ffffff;
+}
+.web-development .column-left {
+		display: inline-block;
+		padding-top: 100px;
+		margin-left: 250px;
+		width: 350px;
+}
+
+.web-development h3{
+		text-align: right;
+}
+
+.web-development {
+		background: #0c9aec url("img/bg_image-web-development.jpg") no-repeat 100% 0%;
+}
+
+.web-development .button {
+		display: block;
+		text-align: right;
+		margin-top: 28px;
+		padding-bottom: 48px;
+		margin-right: 50px;
+}
+
+
+/*LOGOTYPE
+===================================================*/
+
+
+.logotype-section img {
+	float: left;	
+}
+
+.logotype-section {
+		margin-bottom: 98px;
+}
+
+
+
+/*BRANDING
+===================================================*/
+.branding .column-left {
+		display: inline-block;
+		padding-top: 100px;
+	margin-left: 250px;
+		width: 350px;
+}
+
+.branding img {
+	float: right;
+	margin-right: -37px;
+	
+}
+
+
+
+
+
+/*===============================================================GALLERY
+====================================================*/
+
+.gallery .buttons{
+	margin-left: 330px;
+	margin-top: 50px;
+	width: 585px;
+	font-size: 0px;
+	line-height: 34px;
+}
+
+.gallery .button a{
+	color: #0c9aec;
+	border-color: #0c9aec;
+	text-transform: uppercase;
+}
+
+.gallery .button a:hover {
+	color: #ffffff;
+	background-color: #0c9aec;
+}
+
+.gallery .button a:active {
+	color: #ffffff;
+	background-color: #000000;
+	border-color: #000000;
+}
+
+.gallery p {
+	width: 770px;
+	margin-left: 250px;
+	margin-top: 40px;
+}
+
+.gallery .photos-block {
+	font-size: 0px;
+	margin-top: 100px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.gallery img {
+	float: left;
+}
